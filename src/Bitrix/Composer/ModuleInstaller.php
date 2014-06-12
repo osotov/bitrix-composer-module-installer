@@ -4,7 +4,7 @@ namespace Bitrix\Composer;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class ModuleInstaller {
+class ModuleInstaller extends LibraryInstaller {
 	/**
 	 * {@inheritDoc}
 	 */

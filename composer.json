@@ -1,5 +1,5 @@
 {
-    "name": "bitrix-module-installer-plugin",
+    "name": "osotov/bitrix-module-installer-plugin",
     "type": "composer-plugin",
     "license": "MIT",
     "autoload": {

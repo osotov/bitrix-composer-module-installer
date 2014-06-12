@@ -1,0 +1,14 @@
+{
+    "name": "osotov/bitrix-module-installer-plugin",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {"Bitrix\\Composer": "src/"}
+    },
+    "extra": {
+        "class": "Bitrix\\Composer\\ModuleInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    }
+}

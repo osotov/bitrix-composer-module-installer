@@ -19,7 +19,7 @@ class ModuleInstaller extends LibraryInstaller {
 			);
 		}*/
 
-		return 'local/modules/'.substr($package->getPrettyName(), 23);
+		return 'local/modules/'.substr($package->getPrettyName(), 20);
 	}
 
 	/**

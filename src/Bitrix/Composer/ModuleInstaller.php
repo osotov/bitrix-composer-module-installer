@@ -10,7 +10,7 @@ class ModuleInstaller extends LibraryInstaller {
 	 */
 	public function getPackageBasePath(PackageInterface $package)
 	{
-		$extras = $package->getExtra();
+		$extras = $this->composer->getPackage()->getExtra();
 		$name = $package->getPrettyName();
 		if ((array_key_exists('bitrix_module_name', $extras)) && (! empty($extras['bitrix_module_name']))) {
 			$name = (string) $extras['bitrix_module_name'];

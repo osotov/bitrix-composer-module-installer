@@ -10,20 +10,15 @@ class ModuleInstaller extends LibraryInstaller {
 	 */
 	public function getPackageBasePath(PackageInterface $package)
 	{
-		/*$prefix = substr($package->getPrettyName(), 0, 23);
-		if ('phpdocumentor/template-' !== $prefix) {
-			throw new \InvalidArgumentException(
-				'Unable to install template, phpdocumentor templates '
-				.'should always start their package name with '
-				.'"phpdocumentor/template-"'
-			);
-		}*/
-		$this->io->write('something');
 		$extras = $package->getExtra();
 		$name = $package->getPrettyName();
 		if ((array_key_exists('bitrix_module_name', $extras)) && (! empty($extras['bitrix_module_name']))) {
 			$name = (string) $extras['bitrix_module_name'];
 		}
+		$this->io->write($extras['bitrix_module_name']);
+		$this->io->write($package->getPrettyName());
+		$this->io->write($package->getName());
+		$this->io->write($package->getExtra());
 		return 'local/modules/' . $name;
 	}
 

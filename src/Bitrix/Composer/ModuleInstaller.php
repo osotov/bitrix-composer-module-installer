@@ -15,10 +15,11 @@ class ModuleInstaller extends LibraryInstaller {
 		if ((array_key_exists('bitrix_module_name', $extras)) && (! empty($extras['bitrix_module_name']))) {
 			$name = (string) $extras['bitrix_module_name'];
 		}
-		$this->io->write($extras['bitrix_module_name']);
+		foreach ($extras as $key => $extra) {
+			$this->io->write($key .'=>' . $extra);
+		}
 		$this->io->write($package->getPrettyName());
 		$this->io->write($package->getName());
-		$this->io->write($package->getExtra());
 		return 'local/modules/' . $name;
 	}
 

@@ -18,8 +18,13 @@ class ModuleInstaller extends LibraryInstaller {
 				.'"phpdocumentor/template-"'
 			);
 		}*/
-
-		return 'local/modules/' . $package->getName();
+		$this->io->write('something');
+		$extras = $package->getExtra();
+		$name = $package->getPrettyName();
+		if ((array_key_exists('bitrix_module_name', $extras)) && (! empty($extras['bitrix_module_name']))) {
+			$name = (string) $extras['bitrix_module_name'];
+		}
+		return 'local/modules/' . $name;
 	}
 
 	/**

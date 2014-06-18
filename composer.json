@@ -2,7 +2,13 @@
     "name": "osotov/bitrix-module-installer-plugin",
     "type": "composer-plugin",
     "license": "MIT",
-    "varsion":"1.0.0",
+    "description" : "Bitrix modules installation plugin. Plugin adds modules to /local/modules/{$name} location",
+    "authors": [
+        {
+            "name": "Mikhail Osotov",
+            "email": "reghan7@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-0": {"Bitrix\\Composer": "src/"}
     },

@@ -10,10 +10,10 @@
         }
     ],
     "autoload": {
-        "psr-0": {"Bitrix\\Composer": "src/"}
+        "psr-4": {"Osotov\\BitrixPluginForComposer": "src/"}
     },
     "extra": {
-        "class": "Bitrix\\Composer\\ModuleInstallerPlugin"
+        "class": "Osotov\\BitrixPluginForComposer\\ModuleInstallerPlugin"
     },
     "require": {
         "composer-plugin-api": "1.0.0"

@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"Osotov\\BitrixPluginForComposer": "src/"}
+        "psr-4": {"Osotov\\BitrixPluginForComposer\\": "src/"}
     },
     "extra": {
         "class": "Osotov\\BitrixPluginForComposer\\ModuleInstallerPlugin"
